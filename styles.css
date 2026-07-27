@@ -122,6 +122,8 @@ a { color: inherit; }
 .section-label { padding: 48px clamp(24px, 4vw, 64px); border-right: 1px solid var(--line); }
 .section-label span { color: var(--rust); font: 400 12px/1 var(--mono); }
 .section-label p { margin-top: 26px; font: 400 11px/1.7 var(--mono); }
+.features { min-width: 0; }
+.feature + .feature { border-top: 1px solid var(--ink); }
 .feature-link {
   display: flex;
   min-height: 100%;
@@ -131,6 +133,7 @@ a { color: inherit; }
   transition: background .25s;
 }
 .feature-link:hover { background: var(--acid); }
+.feature-new .feature-link { min-height: 90vh; }
 .feature-meta {
   display: flex;
   justify-content: space-between;
@@ -142,6 +145,8 @@ a { color: inherit; }
   line-height: 1.12;
   letter-spacing: -.045em;
 }
+.feature-secondary .feature-link { min-height: 68vh; }
+.feature-secondary h2 { font-size: clamp(42px, 5.5vw, 78px); }
 .feature > a > p { font-size: 18px; line-height: 1.8; }
 .feature blockquote {
   max-width: 650px;
@@ -174,6 +179,7 @@ footer {
   letter-spacing: -.055em;
 }
 .article-hero > p:not(.eyebrow) { margin: 32px 0 56px; font-size: clamp(18px, 2vw, 25px); }
+.temperature-hero h1 { max-width: 1060px; font-size: clamp(52px, 7.5vw, 104px); }
 .article-byline {
   display: flex;
   gap: 40px;
@@ -232,6 +238,7 @@ footer {
   .writing { grid-template-columns: 1fr; }
   .section-label { border-right: 0; border-bottom: 1px solid var(--line); }
   .feature h2 { margin-top: 52px; }
+  .feature-new .feature-link, .feature-secondary .feature-link { min-height: 78vh; }
   .article-layout { display: block; }
   .article-layout aside { display: none; }
   .prose { padding: 64px 22px 100px; }

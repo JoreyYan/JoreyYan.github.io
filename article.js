@@ -1,13 +1,16 @@
 const slugify = (text, index) =>
   `${text.trim().replace(/[^\p{L}\p{N}]+/gu, "-").replace(/^-|-$/g, "") || "section"}-${index}`;
 
-fetch("article.md")
+const articleElement = document.querySelector("#article");
+const markdownPath = articleElement.dataset.markdown || "article.md";
+
+fetch(markdownPath)
   .then((response) => {
     if (!response.ok) throw new Error("文章载入失败");
     return response.text();
   })
   .then((markdown) => {
-    const article = document.querySelector("#article");
+    const article = articleElement;
     article.innerHTML = marked.parse(markdown);
 
     const headings = [...article.querySelectorAll("h2")];
