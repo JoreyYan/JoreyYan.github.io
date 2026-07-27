@@ -291,3 +291,11 @@ $$T_{\rm opt}=\frac{\eta}{B},\qquad \sigma_n^2=\sigma_0^2\Big[\frac{N-1}{N\beta}
 **信息从哪来（$V$ 是什么）？采样比训练冷多少（$\beta$ 多大）？**
 
 两个都答不上来的，就是在闭环里滚雪球——而雪球会越滚越小。
+
+---
+
+### 延伸阅读
+
+- [S. Ross, G. Gordon, D. Bagnell, *A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning*](https://proceedings.mlr.press/v15/ross11a.html)
+- [I. Shumailov et al., *AI models collapse when trained on recursively generated data*](https://www.nature.com/articles/s41586-024-07566-y)
+- [Y. Song et al., *Score-Based Generative Modeling through Stochastic Differential Equations*](https://arxiv.org/abs/2011.13456)

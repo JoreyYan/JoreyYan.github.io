@@ -333,9 +333,9 @@ sequence → structure 已经接近饱和。sequence → **kinetics** 基本是�
 
 ### 延伸阅读
 
-- Y. Deng, Z. Hani, X. Ma, *Long time derivation of the Boltzmann equation from hard sphere dynamics*, arXiv:2408.07818
+- [Y. Deng, Z. Hani, X. Ma, *Long time derivation of the Boltzmann equation from hard sphere dynamics*](https://arxiv.org/abs/2408.07818), arXiv:2408.07818
 - O. E. Lanford III (1975), 硬球动力学的短时间推导
 - R. Zwanzig (1961); H. Mori (1965), 投影算子形式主义的两条原始路线
 - A. J. Chorin et al., *Optimal prediction* —— MZ 在模型约化中的现代表述
 - 粗粒化动力学综述：bottom-up coarse-graining 中 kinetics 难以保持的问题
-- VAMP / VAMPnets / Markov State Models —— 慢变量与亚稳态的现代工具链
+- [VAMPnets: Deep learning of molecular kinetics](https://doi.org/10.1038/s41467-017-02388-1) / Markov State Models —— 慢变量与亚稳态的现代工具链
