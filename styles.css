@@ -227,6 +227,7 @@ footer {
 }
 .article-hero > p:not(.eyebrow) { margin: 32px 0 56px; font-size: clamp(18px, 2vw, 25px); }
 .temperature-hero h1 { max-width: 1060px; font-size: clamp(52px, 7.5vw, 104px); }
+.spectrum-hero h1 { max-width: 1120px; font-size: clamp(46px, 6.6vw, 90px); }
 .article-byline {
   display: flex;
   gap: 40px;
@@ -272,9 +273,17 @@ footer {
 }
 .prose blockquote p { font-size: 20px; line-height: 1.8; }
 .prose hr { margin: 72px 0; border: 0; border-top: 1px solid var(--line); }
-.prose table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.prose table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-size: 14px;
+}
 .prose th, .prose td { padding: 12px; border: 1px solid var(--line); text-align: left; }
 .prose code { font-family: var(--mono); font-size: .88em; }
+.prose pre { max-width: 100%; overflow-x: auto; }
 .prose .katex-display { margin: 38px 0; overflow-x: auto; overflow-y: hidden; }
 .loading { font-family: var(--mono); font-size: 12px !important; }
 
